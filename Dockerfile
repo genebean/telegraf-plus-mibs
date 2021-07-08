@@ -1,4 +1,4 @@
-FROM telegraf:1.19.0
+FROM telegraf:1.19.1
 
 RUN sed -i 's/main/main non-free/g' /etc/apt/sources.list \
   && apt-get update -qq \
